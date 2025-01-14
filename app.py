@@ -5,8 +5,8 @@ import os
 
 # Configuration
 API_URL = "https://lastmileai.dev/api/2/auto_eval/evaluation/evaluate"  # LastMile AI Inference URL
-LASTMILE_API_TOKEN = os.getenv("LASTMILE_API_TOKEN")  # Replace with your API token
-MODEL_ID = os.getenv("MODEL_ID") # Replace with you autoeval model id
+LASTMILE_API_TOKEN = st.secrets["LASTMILE_API_TOKEN"]  # Replace with your API token
+MODEL_ID = st.secrets["MODEL_ID"] # Replace with you autoeval model id
 TIMEOUT = 30  # Timeout for each request in seconds
 HEADERS = {
     'Content-Type': 'application/json',
