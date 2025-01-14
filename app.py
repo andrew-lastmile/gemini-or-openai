@@ -45,7 +45,7 @@ def create_bar(score, label, color):
         </div>
         <div style="
             position: absolute;
-            left: 55%;
+            left: calc(55% - 22px);
             top: -25px;
             text-align: center;
             display: flex;
